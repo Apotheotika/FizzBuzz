@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>FizzBuzz</title>
+</head>
+<body>
+<script>
+input = prompt("Please enter a number: ", 0);
+num = parseInt(input);
+for(x = 1; x <= num; x++){
+	if(x % 3 == 0 && x % 5 == 0){
+		document.write("FizzBuzz");
+	} else if (x % 3 == 0){
+		document.write("Fizz");
+	} else if (x % 5 == 0){
+		document.write("Buzz");
+	} else {
+		document.write(x);
+	}
+	if(x !== num){
+		document.write(", ");
+	}
+}
+</script>
+</body>
+</html>
